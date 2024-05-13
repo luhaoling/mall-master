@@ -39,12 +39,7 @@
       <!-- <el-form-item label="排序：">
         <el-input v-model="productCateInfo.sort"></el-input>
       </el-form-item> -->
-      <el-form-item label="是否显示在导航栏：">
-        <el-radio-group v-model="productCateInfo.isTab">
-          <el-radio :label="true">是</el-radio>
-          <el-radio :label="false">否</el-radio>
-        </el-radio-group>
-      </el-form-item>
+  
       <el-form-item>
         <el-button type="primary" @click="onSubmit('productCateFrom')">提交</el-button>
         <el-button v-if="!isEdit" @click="resetForm('productCateFrom')">重置</el-button>
