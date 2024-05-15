@@ -96,7 +96,7 @@
   import {fetchList,closeOrder,deleteOrder} from '@/api/order'
   import {getOrder} from '@/apis/goods'
   import {formatDate} from '@/utils/date';
-  import LogisticsDialog from '@/views/oms/order/components/logisticsDialog';
+  
   const defaultListQuery = {
     pageNum: 1,
     pageSize: 10,
@@ -109,7 +109,6 @@
   };
   export default {
     name: "orderList",
-    components:{LogisticsDialog},
     data() {
       return {
         listQuery: {

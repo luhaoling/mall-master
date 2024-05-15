@@ -105,7 +105,7 @@
 </template>
 <script>
   import {updateReceiverInfo,updateMoneyInfo,closeOrder,updateOrderNote,deleteOrder} from '@/api/order';
-  import LogisticsDialog from '@/views/oms/order/components/logisticsDialog';
+
   import {getOrderEach} from '@/apis/goods';
 
   import {formatDate} from '@/utils/date';
@@ -123,7 +123,7 @@
   };
   export default {
     name: 'orderDetail',
-    components: { VDistpicker, LogisticsDialog},
+    
     data() {
       return {
         id: null,

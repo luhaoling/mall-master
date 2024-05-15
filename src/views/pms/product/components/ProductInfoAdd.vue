@@ -1,3 +1,4 @@
+<!-- 添加商品组件 -->
 <template>
   <div style="margin-top: 50px">
     <el-form :model="value" :rules="rules" ref="productInfoForm" label-width="120px" style="width: 600px" size="small">
@@ -16,18 +17,6 @@
         <el-input v-model="value.shopPrice" :disabled="disabled"></el-input>
       </el-form-item>
       <el-form-item label="是否免运费：" prop="name">
-            <!-- <el-select
-              v-model="value.ship_free"
-              :disabled="disabled"
-              placeholder="请选择是否免运费">
-              <el-option
-                v-for="item in shipList"
-                :key="item.value"
-                :label="item.label"
-                :value="item.value">
-              </el-option>
-                @change="handlePublishStatusChange('sale',scope.$index, scope.row)"
-        </el-select> -->
         <el-switch
                 :active-value="true"
                 :inactive-value="false"
@@ -36,11 +25,6 @@
               </el-switch>
       </el-form-item>
       <el-form-item label="商品分类：" prop="brand">
-        <!-- <el-cascader
-          v-model="selectProductCateValue"
-          :disabled="disabled"
-          :options="productCateOptions">
-        </el-cascader> -->
         <el-select
           v-model="value.first_cate"
           @change="handleCateChange"
@@ -100,9 +84,6 @@
       <el-form-item label="商品简介：" prop="name">
         <el-input v-model="value.goodsBrief"  type="textarea" :disabled="disabled"></el-input>
       </el-form-item>
-      <!-- <el-form-item label="商品详情：" prop="name">
-        <el-input v-model="value.desc"  type="textarea" :disabled="disabled"></el-input>
-      </el-form-item> -->
       <el-form-item label="商品详情图片：">
         <multi-upload v-model="value.descImages" @input="multiInput2" :disabled="disabled" key="desc-images"></multi-upload>
       </el-form-item>
@@ -126,11 +107,6 @@
   export default {
     name: "ProductInfoDetail",
     props: {
-      // value: Object,
-      // isEdit: {
-      //   type: Boolean,
-      //   default: false
-      // }
     },
     components: {MultiUpload},
 

@@ -1,3 +1,4 @@
+<!-- 分类品牌关系列表 -->
 <template>
   <div class="app-container">
     <el-card class="operate-container" shadow="never">

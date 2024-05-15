@@ -1,3 +1,4 @@
+<!-- 添加商品 -->
 <template> 
   <product-detail :is-edit='false'></product-detail>
 </template>

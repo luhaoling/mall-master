@@ -1,3 +1,4 @@
+<!-- 修改商品组件 -->
 <template>
   <div style="margin-top: 50px">
     <el-form :model="value" :rules="rules" ref="productInfoForm" label-width="120px" style="width: 600px" size="small">

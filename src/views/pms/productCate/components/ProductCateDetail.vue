@@ -1,3 +1,4 @@
+<!-- 分类关系组件（可被分类品牌关系和商品分类调用） -->
 <template>
   <el-card class="form-container" shadow="never">
     <el-form :model="productCateInfo"
@@ -26,19 +27,7 @@
             :value="item.parent">
           </el-option>
         </el-select>
-        <!-- <el-select v-model="productCate.parentId"
-                   placeholder="请选择二级分类">
-          <el-option
-            v-for="item in selectProductSecondCateList"
-            :key="item.id"
-            :label="item.name"
-            :value="item.id">
-          </el-option>
-        </el-select> -->
       </el-form-item>
-      <!-- <el-form-item label="排序：">
-        <el-input v-model="productCateInfo.sort"></el-input>
-      </el-form-item> -->
   
       <el-form-item>
         <el-button type="primary" @click="onSubmit('productCateFrom')">提交</el-button>

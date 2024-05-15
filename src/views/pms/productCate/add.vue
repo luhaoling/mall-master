@@ -1,3 +1,4 @@
+<!-- 添加分类品牌关系 -->
 <template> 
   <product-cate-detail :is-edit='false'></product-cate-detail>
 </template>

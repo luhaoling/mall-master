@@ -1,3 +1,4 @@
+<!-- 修改商品分类 -->
 <template> 
   <product-cate-detail :is-edit='true'></product-cate-detail>
 </template>

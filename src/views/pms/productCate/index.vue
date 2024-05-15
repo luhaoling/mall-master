@@ -1,3 +1,4 @@
+<!-- 商品分类列表（包含增删） -->
 <template>
   <div class="app-container">
     <el-card class="operate-container" shadow="never">
@@ -23,12 +24,6 @@
         <!-- {{JSON.stringify(node)}} -->
         <span class="cat-name">{{ node.label }}</span>
         <span>
-          <!-- <el-switch
-            v-model="data.tab"
-            active-text="导航栏"
-            v-if="node.level==1"
-            @change="handleChange(data.tab,node.id)">
-          </el-switch> -->
           <el-button
             type="text"
             size="mini"

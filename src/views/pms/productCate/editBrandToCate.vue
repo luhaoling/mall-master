@@ -1,4 +1,4 @@
-User
+<!-- 编辑分类品牌关系 -->
 <template> 
     <div class="brand-cate">
         <el-form :model="productCateInfo"
